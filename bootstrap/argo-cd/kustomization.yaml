@@ -11,6 +11,8 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
+kind: Kustomization
+namespace: cf-local
 patches:
 - patch: |-
     - op: add
@@ -18,7 +20,5 @@ patches:
       value:
         # name: PROCESS_NON_ROOT_APP
         value: "true"
-kind: Kustomization
-namespace: cf-local
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.355
+- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.357
