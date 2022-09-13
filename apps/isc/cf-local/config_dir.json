@@ -1,0 +1,18 @@
+{
+  "appName": "isc",
+  "userGivenName": "isc",
+  "destNamespace": "cf-local",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "shared-config/runtimes/cf-local",
+  "srcRepoURL": "https://github.com/oleksandr-codefresh/eks-local.git",
+  "srcTargetRevision": "",
+  "labels": {
+    "codefresh_io_entity": "shared-configuration",
+    "codefresh_io_internal": "true"
+  },
+  "annotations": {
+    "argocd.argoproj.io/sync-wave": "10"
+  },
+  "exclude": "",
+  "include": ""
+}
