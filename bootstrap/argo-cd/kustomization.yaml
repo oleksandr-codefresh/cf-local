@@ -14,7 +14,7 @@ configMapGenerator:
 images:
 - name: quay.io/codefresh/argocd
   newName: quay.io/codefresh/argocd
-  newTag: v2.1.17-cap-CR-split-files 
+  newTag: v2.1.17-cap-CR-split-files
 kind: Kustomization
 namespace: cf-local
 patches:
@@ -28,4 +28,4 @@ patches:
     kind: Deployment
     name: argocd-server
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.357
+- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.511
