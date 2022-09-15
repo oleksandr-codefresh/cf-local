@@ -28,4 +28,4 @@ patches:
     kind: Deployment
     name: argocd-server
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.511
+- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.518
