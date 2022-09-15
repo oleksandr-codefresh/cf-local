@@ -13,8 +13,8 @@ configMapGenerator:
   name: argocd-cm
 images:
 - name: quay.io/codefresh/argocd
-  newName: xeonalex/personal-argocd-dev
-  newTag: v2.3.4-operation-revision-fix-usage-3
+  newName: quay.io/codefresh/argocd
+  newTag: v2.3.4-cap-CR-14141-operation-revision 
 kind: Kustomization
 namespace: cf-local
 patches:
