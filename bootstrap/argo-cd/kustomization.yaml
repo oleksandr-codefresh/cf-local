@@ -14,7 +14,7 @@ configMapGenerator:
 images:
 - name: quay.io/codefresh/argocd
   newName: quay.io/codefresh/argocd
-  newTag: v2.3.4-cap-CR-14141-operation-revision 
+  newTag: v2.3.4-cap-CR-14141-operation-revision
 kind: Kustomization
 namespace: cf-local
 patches:
@@ -28,4 +28,4 @@ patches:
     kind: Deployment
     name: argocd-server
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.518
+- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-cd?ref=0.1.15
