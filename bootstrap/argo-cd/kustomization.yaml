@@ -14,7 +14,7 @@ configMapGenerator:
 images:
 - name: quay.io/codefresh/argocd
   newName: xeonalex/personal-argocd-dev
-  newTag: 2.4.15-cap-CR-15677-rollback-2
+  newTag: 2.4.15-cap-CR-15677-rollback-3
 kind: Kustomization
 namespace: cf-local
 patches:
