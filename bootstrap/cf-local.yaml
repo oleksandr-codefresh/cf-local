@@ -35,8 +35,8 @@ data:
         type: kustomize
         url: github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/sealed-secrets?ref=0.1.15
       defVersion: null
-      ingressHost2: http://alexs-ingresshost.ngrok.io      
-      ingressHost: http://localhost:3017   
+      ingressHost: http://alexs-ingresshost.ngrok.io      
+      ingressHost2: http://localhost:3017   
       repo: https://github.com/oleksandr-codefresh/cf-local
       requiredCLIVersion: ^0.1.0
       version: 0.1.15
