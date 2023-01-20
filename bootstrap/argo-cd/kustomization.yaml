@@ -11,10 +11,6 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
-# images:
-# - name: quay.io/codefresh/argocd
-#   newName: xeonalex/personal-argocd-dev
-#   newTag: 2.4.15-cap-CR-15677-rollback-5
 kind: Kustomization
 namespace: cf-local
 patches:
@@ -28,4 +24,4 @@ patches:
     kind: Deployment
     name: argocd-server
 resources:
-- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-cd?ref=0.1.15
+- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-cd?ref=0.1.20
